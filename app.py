@@ -17,8 +17,29 @@ USE_GENAI = os.getenv("PARAPHRASE_WITH_GENAI", "True").lower() in ("1","true","y
 GENAI_API_KEY = os.getenv("GENAI_API_KEY")  # required only if USE_GENAI True
 
 if USE_GENAI:
-    from google import genai
-    client = genai.Client(api_key=GENAI_API_KEY)
+    # Try a couple of possible GenAI client module names/APIs so imports work across
+    # different package versions (google.generativeai vs google.genai).
+    genai = None
+    try:
+        import google.generativeai as genai_mod
+        genai = genai_mod
+    except Exception:
+        try:
+            from google import genai as genai_mod
+            genai = genai_mod
+        except Exception as e:
+            raise ImportError(
+                "GenAI client not available. Install google-generativeai or set PARAPHRASE_WITH_GENAI=False"
+            ) from e
+
+    # Initialize client: some versions expose a Client class, others use a configure() function.
+    if hasattr(genai, "Client"):
+        client = genai.Client(api_key=GENAI_API_KEY)
+    elif hasattr(genai, "configure"):
+        genai.configure(api_key=GENAI_API_KEY)
+        client = genai
+    else:
+        raise ImportError("Unrecognized genai client API; cannot initialize client")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
@@ -91,15 +112,32 @@ Answer to paraphrase:
 
 Paraphrased answer:
 """
-    resp = client.models.generate_content(
-        model="gemini-2.5-flash",
-        contents=prompt
-    )
-    # Try robust extraction
-    if hasattr(resp, "text"):
-        return resp.text.strip()
-    # fallback
-    return str(resp).strip()
+    # Handle different GenAI API styles
+    try:
+        # Try google.genai.Client style (client.models.generate_content)
+        if hasattr(client, "models"):
+            resp = client.models.generate_content(
+                model="gemini-2.0-flash-exp",
+                contents=prompt
+            )
+        # Try google.generativeai style (direct generate_content on model)
+        elif hasattr(client, "GenerativeModel"):
+            model = client.GenerativeModel("gemini-2.0-flash-exp")
+            resp = model.generate_content(prompt)
+        # Fallback for google.generativeai when client is the module itself
+        else:
+            model = client.GenerativeModel("gemini-2.0-flash-exp")
+            resp = model.generate_content(prompt)
+        
+        # Try robust extraction
+        if hasattr(resp, "text"):
+            return resp.text.strip()
+        # fallback
+        return str(resp).strip()
+    except Exception as e:
+        logger.error("GenAI API call failed: %s", e, exc_info=True)
+        # Return original text if GenAI fails
+        return text
 
 @app.post("/chat")
 async def chat(req: Request):

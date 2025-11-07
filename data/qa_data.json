@@ -1,0 +1,202 @@
+[
+  {
+    "question": "What services does your company currently offer?",
+    "answer": "We currently offer Architectural Design, Building Planning, Landscape Design, Estimator Surveyor & Valuer services, Soil Testing, and Consulting."
+  },
+  {
+    "question": "Do you offer 2D to 3D visualization services?",
+    "answer": "Our 2D to 3D visualization feature is under development and will be available soon."
+  },
+  {
+    "question": "What is Architectural Design?",
+    "answer": "Architectural Design involves creating detailed plans and drawings for buildings and structures, keeping aesthetics, function, and safety in mind."
+  },
+  {
+    "question": "What does Building Planning include?",
+    "answer": "Building Planning includes layout design, space optimization, structural considerations, and compliance with local regulations."
+  },
+  {
+    "question": "Do you provide services for residential projects?",
+    "answer": "Yes, we handle residential projects including houses, apartments, and duplex layouts."
+  },
+  {
+    "question": "Do you work on commercial buildings?",
+    "answer": "Yes, we provide planning and design services for small commercial and mixed-use buildings."
+  },
+  {
+    "question": "What is Landscape Design?",
+    "answer": "Landscape Design focuses on planning and designing outdoor spaces such as gardens, pathways, and green areas."
+  },
+  {
+    "question": "Do you offer garden layout planning?",
+    "answer": "Yes, we provide custom garden and landscape layout services tailored to your site."
+  },
+  {
+    "question": "What does an Estimator do?",
+    "answer": "An Estimator prepares cost estimates for construction materials, labor, and time required for a project."
+  },
+  {
+    "question": "Do you offer soil testing services?",
+    "answer": "Yes, we conduct soil testing to assess soil strength, composition, and suitability for construction."
+  },
+  {
+    "question": "Do you provide Vastu-compliant designs?",
+    "answer": "Yes, we offer Vastu-compliant planning on request to align your design with traditional principles."
+  },
+  {
+    "question": "Do you help with government approvals?",
+    "answer": "We provide documentation and drawings required for approval, but we do not handle the submission process directly."
+  },
+  {
+    "question": "Can I get a quote before starting a project?",
+    "answer": "Yes, you can request a free consultation and we will provide an estimated cost based on your requirements."
+  },
+  {
+    "question": "How can I share my site measurements?",
+    "answer": "You can share CAD files, scanned sketches with dimensions, or arrange for a site visit by our team."
+  },
+  {
+    "question": "Do you design from scratch?",
+    "answer": "Yes, we can create complete designs based on your requirements, starting from the concept phase."
+  },
+  {
+    "question": "Do you work with hand-drawn sketches?",
+    "answer": "Yes, as long as the sketch is clear and dimensioned, we can work with it."
+  },
+  {
+    "question": "How accurate are your building plans?",
+    "answer": "We ensure high accuracy by using professional tools and cross-verifying all dimensions and layouts."
+  },
+  {
+    "question": "Do you offer site visits?",
+    "answer": "Yes, for local projects, we can schedule site visits for better understanding and measurements."
+  },
+  {
+    "question": "How long does a typical project take?",
+    "answer": "Timeframes vary, but initial designs usually take 3–7 working days depending on complexity."
+  },
+  {
+    "question": "What is a Valuer in construction?",
+    "answer": "A Valuer estimates the current market value of land, property, or a building based on various factors."
+  },
+  {
+    "question": "Can I make changes to the plan later?",
+    "answer": "Yes, we allow for a few revisions based on your feedback before finalizing the design."
+  },
+  {
+    "question": "Can you help with space-saving layouts?",
+    "answer": "Yes, our planning focuses on optimizing every square foot to ensure efficient use of space."
+  },
+  {
+    "question": "Do you offer 3D visualization currently?",
+    "answer": "Not at the moment, but our 3D visualization service is under development and will be launched soon."
+  },
+  {
+    "question": "Do you provide detailed elevation drawings?",
+    "answer": "Yes, we create front, rear, and side elevation views as part of the architectural package."
+  },
+  {
+    "question": "What formats do you deliver the drawings in?",
+    "answer": "We provide AutoCAD (.dwg) files, PDF versions, and print-ready blueprints as needed."
+  },
+  {
+    "question": "What software do you use?",
+    "answer": "We use industry-standard tools like AutoCAD for 2D layouts and advanced tools for design documentation."
+  },
+  {
+    "question": "Do you help with floor plan optimization?",
+    "answer": "Yes, we analyze and suggest improvements to enhance functionality and aesthetics."
+  },
+  {
+    "question": "Is soil testing necessary before construction?",
+    "answer": "Yes, soil testing is crucial to understand the load-bearing capacity and suitability of the land."
+  },
+  {
+    "question": "Do you offer borehole drilling?",
+    "answer": "We work with partners to provide borehole and geotechnical services if required."
+  },
+  {
+    "question": "Can you suggest landscape features for small plots?",
+    "answer": "Absolutely, we design compact landscapes for small areas using creative zoning and greenery ideas."
+  },
+  {
+    "question": "Do you offer seasonal garden planning?",
+    "answer": "Yes, we can plan your garden layout to align with local seasons and plant cycles."
+  },
+  {
+    "question": "Do you work with builders or contractors?",
+    "answer": "Yes, we often collaborate with builders and provide contractor-ready documents."
+  },
+  {
+    "question": "Can you provide construction estimates?",
+    "answer": "Yes, our estimator can generate a detailed bill of quantities and cost estimation."
+  },
+  {
+    "question": "Do you create layout drawings for municipal approval?",
+    "answer": "Yes, we prepare building plan sets that comply with local approval standards."
+  },
+  {
+    "question": "Can you plan a multi-floor building?",
+    "answer": "Yes, we plan multi-storey buildings with proper floor-wise detailing and connectivity."
+  },
+  {
+    "question": "Do you offer virtual consultations?",
+    "answer": "Yes, we offer virtual meetings via Zoom or Google Meet to discuss your project."
+  },
+  {
+    "question": "What if I don’t have a plot yet?",
+    "answer": "We can provide consulting on plot selection and recommend layouts based on plot dimensions once selected."
+  },
+  {
+    "question": "How do I get started?",
+    "answer": "You can contact us through our website form, chat widget, or email to discuss your project."
+  },
+  {
+    "question": "Do you handle renovations or only new builds?",
+    "answer": "We handle both new constructions and renovation or extension plans."
+  },
+  {
+    "question": "Can I include eco-friendly features in my plan?",
+    "answer": "Yes, we can incorporate rainwater harvesting, natural ventilation, and energy-efficient layouts."
+  },
+  {
+    "question": "Do you support Vastu corrections for existing layouts?",
+    "answer": "Yes, we can review your layout and suggest changes based on Vastu compliance."
+  },
+  {
+    "question": "Is consulting included in the design package?",
+    "answer": "Yes, initial consultations are included. Extended consulting is available at an additional charge."
+  },
+  {
+    "question": "Can I request printed copies of my plan?",
+    "answer": "Yes, we provide digital and printed copies based on your preference."
+  },
+  {
+    "question": "Can I request a full project report?",
+    "answer": "Yes, we can prepare a complete project report including design, estimates, and material requirements."
+  },
+  {
+    "question": "Will you offer 3D interior views in the future?",
+    "answer": "Yes, our upcoming 2D-to-3D feature will include detailed interior visualization."
+  },
+  {
+    "question": "Can you suggest materials based on budget?",
+    "answer": "Yes, we can recommend construction materials suited to your budget and preferences."
+  },
+  {
+    "question": "Do you offer foundation planning based on soil?",
+    "answer": "Yes, our soil test results help determine suitable foundation types for your site."
+  },
+  {
+    "question": "Is your team certified or licensed?",
+    "answer": "Yes, our team includes certified professionals with years of experience in architecture and planning."
+  },
+  {
+    "question": "Do you help with choosing the best orientation for the house?",
+    "answer": "Yes, we suggest orientations based on sunlight, wind direction, and Vastu if needed."
+  },
+  {
+    "question": "What types of clients do you serve?",
+    "answer": "We work with individual homeowners, contractors, builders, and land developers."
+  }
+]
